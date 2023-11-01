@@ -15,7 +15,7 @@ abstract class RouteConfig {
       case Routes.home:
         return MaterialPageRoute(
           builder: (context) => BlocProvider<HomeBloc>(
-            create: (context) => sl<HomeBloc>(),
+            create: (context) => sl<HomeBloc>()..add(GetUsers()),
             child: const HomeScreen(),
           ),
         );

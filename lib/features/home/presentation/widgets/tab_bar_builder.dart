@@ -6,9 +6,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../bloc/home_bloc.dart';
-import 'views/categories_view.dart';
 import 'views/orders_view.dart';
 import 'views/services_view.dart';
+import 'views/users_view.dart';
 
 class TabBarBuilder extends StatelessWidget {
   const TabBarBuilder({super.key});
@@ -75,7 +75,8 @@ class TabBarBuilder extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: TabBarView(
                 children: [
-                  CategoriesView(),
+                  // CategoriesView(),
+                  UsersView(),
                   ServicesView(),
                   OrdersView(),
                 ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../core/utils/app_fonts.dart';
 
 import '../core/utils/app_colors.dart';
+import '../core/utils/app_fonts.dart';
 import '../core/utils/app_styles.dart';
 
 abstract class ThemeConfig {
@@ -44,6 +44,9 @@ abstract class ThemeConfig {
         type: BottomNavigationBarType.fixed,
         selectedIconTheme: IconThemeData(color: AppColors.primary),
         unselectedIconTheme: IconThemeData(color: AppColors.grey200),
+      ),
+      progressIndicatorTheme: const ProgressIndicatorThemeData(
+        color: AppColors.primary,
       ),
     );
   }

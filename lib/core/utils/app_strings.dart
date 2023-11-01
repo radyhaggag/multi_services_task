@@ -24,4 +24,5 @@ abstract class AppStrings {
   static const assets = "Assets";
   static const support = "Support";
   static const profile = "Profile";
+  static const usersView = "Users View";
 }

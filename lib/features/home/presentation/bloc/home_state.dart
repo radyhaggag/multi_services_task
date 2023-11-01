@@ -26,3 +26,23 @@ class BottomNavBarIndexChanged extends HomeState {
   @override
   List<Object> get props => [index];
 }
+
+class UsersLoading extends HomeState {}
+
+class UsersLoadingSuccess extends HomeState {
+  final List<UserModel> users;
+
+  const UsersLoadingSuccess(this.users);
+
+  @override
+  List<Object> get props => [users];
+}
+
+class UsersLoadingFailed extends HomeState {
+  final String message;
+
+  const UsersLoadingFailed(this.message);
+
+  @override
+  List<Object> get props => [message];
+}

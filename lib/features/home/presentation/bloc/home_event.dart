@@ -24,3 +24,5 @@ class ChangeBottomNavBarIndex extends HomeEvent {
   @override
   List<Object> get props => [index];
 }
+
+class GetUsers extends HomeEvent {}
